@@ -1,0 +1,10 @@
+# Use Database connection like
+
+```
+from db_connection import get_connection
+
+cursor = get_connection()
+cursor.execute("select * from users")
+record = cursor.fetchone()
+
+```
