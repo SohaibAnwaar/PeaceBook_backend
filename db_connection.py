@@ -12,6 +12,6 @@ def get_connection():
     cursor.execute("select * from users")
     record = cursor.fetchone()
     print("User db ", record)
-    return cursor 
+    return cursor, connection
 
 
